@@ -1,0 +1,114 @@
+.live_feed_container {
+  overflow: hidden;
+}
+.live_feed_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  z-index: 1;
+  min-height: 230px;
+  padding: 0 1rem;
+}
+.live_feed_withdraw {
+}
+.live_transaction_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.live_transaction_title {
+  width: 16vw;
+  margin-right: 1rem;
+  min-width: 292px;
+  transition: all 0.4s;
+}
+.live_transaction_title_mobile {
+  display: none;
+}
+.withdraw_title_mobile_view {
+  width: auto;
+  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #c10dcd, rgba(146, 19, 198, 0));
+  text-align: center;
+}
+.withdraw_title_mobile_view img {
+  width: 30px;
+  height: auto;
+}
+.withdraw_title_mobile_view_text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+}
+.live_transaction_title_desktop {
+  text-align: right;
+}
+.live_transaction_content {
+  width: 60vw;
+  transition: all 0.4s;
+}
+.live_transaction_slick_row {
+  position: relative;
+  padding: 0 0.5rem;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  margin-right: 15px;
+}
+.live_transaction_box {
+  padding: 0.5rem;
+  background: rgba(19, 37, 114, 0.6);
+  border-radius: 10px;
+}
+.live_transaction_box_profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.box_profile_img_wrapper {
+  flex: 1 1 auto;
+}
+.box_profile_img_wrapper img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.box_profile_detail_wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.profile_number {
+  font-size: 1.125rem;
+  color: #fafafa;
+  text-shadow: 0 0 6px hsl(0deg 0% 100% / 25%);
+  text-align: right;
+  transition: all 0.4s;
+}
+.detail_wrapper {
+}
+.detail_wrapper_text {
+  color: #fafafa;
+  transition: all 0.4s;
+}
+.live_transaction_box_volume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+.live_transaction_amount {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffbf00;
+}

@@ -1,0 +1,223 @@
+.main_content_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  width: calc(100% - 250px);
+  padding-top: 75px;
+}
+.main_content_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-position: 50%;
+}
+.content_image_wrapper {
+  /* background-image: url("../../assets/game-bg.png");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 100vh; */
+}
+.router_title {
+  color: #fafafa;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 20px;
+  display: block;
+}
+
+.content_marquee {
+  display: block;
+}
+.marquee_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 5px 1rem;
+  background: #fef8d1;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.icon_wrapper {
+  margin-right: 1rem;
+}
+.icon_style {
+  font-size: 20px;
+  font-weight: 600;
+  color: #9c090a;
+}
+.marquee_track {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee_text {
+  display: inline-block;
+  margin: 0;
+  padding-left: 100%;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #9c090a;
+  -webkit-animation-name: slideMarquee;
+  animation-name: slideMarquee;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slideMarquee {
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideMarquee {
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+.container_top {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.container_wrapper {
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.seo_heading {
+}
+.heading_title {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+  padding-top: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fafafa;
+}
+.banner_wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.banner_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 150px;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent);
+}
+.banner_wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 150px;
+  height: 100%;
+  right: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8), transparent);
+}
+.image_link {
+  display: block;
+  margin: 0 0.5rem;
+  max-width: 100%;
+}
+.image_link img {
+  max-width: 100%;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+
+  border-radius: 15px;
+  border: 0;
+}
+.router_wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* maquee */
+.content_marquee_sec {
+  display: none;
+  padding-top: 1rem;
+}
+.marquee_container_sec {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 5px 1rem;
+  background: #fef8d1;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
+}
+/* content 991px */
+.mobile_content {
+  display: none;
+}
+
+/* Responsive Media */
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 991px) {
+  .content_marquee {
+    display: none;
+  }
+  .content_marquee_sec {
+    display: block;
+  }
+  .heading_title {
+    text-align: center;
+  }
+  .mobile_content {
+    display: flex;
+    position: relative;
+    height: 100%;
+  }
+  .router_wrapper {
+    display: none;
+  }
+  .router_title {
+    display: none;
+  }
+  .router_title_sec {
+    color: #fafafa;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 20px;
+    display: block;
+  }
+  .mobile_content_left {
+    display: block;
+    flex: 0 0 20%;
+    transition: all 0.4s;
+  }
+  .mobile_content_right {
+    width: 100%;
+    flex: 0 0 80%;
+    transition: all 0.4s;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1480px) {
+  .main_content_wrapper {
+    width: calc(100% - 200px);
+  }
+}

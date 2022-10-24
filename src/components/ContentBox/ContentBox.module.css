@@ -1,0 +1,17 @@
+.content_box {
+  flex: 0 0 80%;
+  transition: all 0.4s;
+}
+.content_category {
+  min-height: 500px;
+  height: auto;
+}
+.content_container {
+  padding: 0 1rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content_box {
+    padding-top: 1rem;
+  }
+}

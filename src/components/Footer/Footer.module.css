@@ -1,0 +1,125 @@
+footer {
+  background: rgb(251, 223, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 223, 40, 1) 0%,
+    rgba(237, 184, 46, 1) 50%,
+    rgba(227, 155, 48, 1) 100%
+  );
+}
+.footer_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  transition: all 0.4s;
+  padding: 2rem 1rem 1rem;
+}
+.footer_describe_wrapper {
+  flex: 0 0 24%;
+  min-width: 300px;
+  transition: all 0.4s;
+  margin: 0 auto;
+}
+.desc_content_wrapper {
+  padding: 0 1rem;
+}
+.desc_banner_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+.desc_banner_icon img {
+  width: calc(33.33333% - 5px);
+  max-width: 120px;
+  background-color: #561919;
+  border-radius: 8px;
+}
+.footer_tag_wrapper {
+  flex-grow: 1;
+  transition: all 0.4s;
+}
+.footer_content_tag_wrapper {
+  text-align: left;
+}
+
+.footer_content_tag_title {
+  color: #561919;
+  font-size: 1.125rem;
+  margin-bottom: 1.4rem;
+}
+.footer_content_tag_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: center;
+  padding: 0;
+  margin: 0.25rem 0;
+}
+.footer_content_tag_item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #561919;
+  border-bottom: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+.footer_link_btn {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 5px 15px;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  border: none;
+  color: #fbfbfb;
+  padding: 5px 15px;
+  border-radius: 18px;
+  background: #561919;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.75rem;
+}
+.footer_provider_wrapper {
+  display: flex;
+  flex: 0 0 23%;
+  flex-direction: column;
+  transition: all 0.4s;
+}
+.provider_content_wrapper {
+  text-align: center;
+  padding: 0 1rem;
+}
+.provider_payment_wrapper,
+.provider_partnership_wrapper {
+  text-align: left;
+}
+.provider_payment_title,
+.provider_partnership_title {
+  color: #561919;
+  font-size: 1.125rem;
+}
+.provider_payment_banner,
+.provider_partnership_banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+.payment_image_wrapper,
+.partnership_image_wrapper {
+  text-align: center;
+  padding: 0.25rem;
+}
+.payment_image_wrapper img,
+.partnership_image_wrapper img {
+  width: 36px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
