@@ -192,3 +192,9 @@ a {
 ::-webkit-scrollbar-thumb {
   background: #774121;
 }
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #f8f9fa;
+}

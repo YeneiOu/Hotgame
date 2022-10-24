@@ -6,11 +6,18 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import MainContent from "./components/MainContent/MainContent";
 import GameBill from "./components/Gamebill/GameBill";
 import Footer from "./components/Footer/Footer";
+import ModalReg from "./components/Modal/ModalReg";
+import Backdrop from "./components/Modal/Backdrop";
+import ModalPro from "./components/Modal/ModalPro";
+
+
 function App() {
   return (
     <div>
+
       <div>
         <Navbar />
+
       </div>
 
       <div id="main-content" >
@@ -26,6 +33,7 @@ function App() {
         </div>
 
       </div>
+
     </div>
   );
 }
