@@ -198,3 +198,13 @@ button {
   outline: none;
   color: #f8f9fa;
 }
+::marker {
+  display: none;
+  content: "";
+}
+.react-tabs__tab--selected {
+  background-color: transparent;
+}
+.react-tabs__tab--selected {
+  color: #d6d725;
+}

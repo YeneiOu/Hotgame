@@ -6,9 +6,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import MainContent from "./components/MainContent/MainContent";
 import GameBill from "./components/Gamebill/GameBill";
 import Footer from "./components/Footer/Footer";
-import ModalReg from "./components/Modal/ModalReg";
-import Backdrop from "./components/Modal/Backdrop";
-import ModalPro from "./components/Modal/ModalPro";
+import NavbarTwo from "./components/Navbar/NavbarTwo";
 
 
 function App() {
@@ -17,9 +15,7 @@ function App() {
 
       <div>
         <Navbar />
-
       </div>
-
       <div id="main-content" >
         <div className="main_container">
           <div className="main_left">
